@@ -27,9 +27,11 @@ public class Main{
     }
 }
 
-# Java Basics — Day 1
+# Java Basics - Day 1
 
 ## 1. Data Types
+
+Data types define the type of value a variable can store.
 
 ### Primitive Data Types
 
@@ -42,7 +44,7 @@ public class Main{
 - `char`
 - `boolean`
 
-### Non-Primitive / Reference Types
+### Non-Primitive Data Types
 
 - `String`
 - `Array`
@@ -54,44 +56,89 @@ public class Main{
 
 ## 2. Operator Priority
 
-Arithmetic operations are evaluated in this order:
+For basic arithmetic operations:
 
-**Higher Priority**
 ```text
-*   /   %
+*  /  %    → Higher Priority
++  -       → Lower Priority
+```
 
-Lower Priority
+Example:
 
-+   -
-Example
+```java
 int result = 10 + 5 * 2;
+```
 
-// 10 + 10 = 20
-Using Parentheses
+Output:
 
-Parentheses have higher priority and can change the order of execution.
+```text
+20
+```
 
+Because multiplication happens first:
+
+```text
+5 * 2 = 10
+10 + 10 = 20
+```
+
+### Parentheses
+
+Parentheses `()` have higher priority and can change the order.
+
+```java
 int result = (10 + 5) * 2;
+```
 
-// 30
-3. Taking User Input
+Output:
 
-Java uses the Scanner class to take input from the user.
+```text
+30
+```
 
-Step 1: Import Scanner
+---
+
+## 3. Taking User Input
+
+Java uses the `Scanner` class to take input from the user.
+
+### Import Scanner
+
+```java
 import java.util.Scanner;
-Step 2: Create Scanner Object
+```
+
+### Create Scanner Object
+
+```java
 Scanner sc = new Scanner(System.in);
-Step 3: Take Input
+```
+
+### Take Integer Input
+
+```java
 int a = sc.nextInt();
-4. Common Scanner Methods
-Method	Used For
-nextInt()	Integer
-nextDouble()	Double
-nextBoolean()	Boolean
-next()	Single word
-nextLine()	Full line
-5. Basic User Input Program
+```
+
+---
+
+## 4. Common Scanner Methods
+
+```text
+nextInt()       → int
+nextDouble()    → double
+nextFloat()     → float
+nextLong()      → long
+nextBoolean()   → boolean
+next()          → single word
+nextLine()      → complete line
+```
+
+---
+
+## 5. Basic User Input Program
+
+```java
 import java.util.Scanner;
 
 public class Main {
@@ -102,39 +149,45 @@ public class Main {
         System.out.println("Enter value for a:");
         int a = sc.nextInt();
 
-        System.out.println("Value = " + a);
+        System.out.println("Value you entered is: " + a);
     }
 }
-Quick Revision
-Data Types
-Primitive
-byte
-short
-int
-long
-float
-double
-char
-boolean
-Non-Primitive
-String
-Array
-Class
-Object
-Interface
-Operator Priority
-* / %  →  + -
-User Input
-Import Scanner
-      ↓
-Create Scanner object
-      ↓
-Use input method
-      ↓
-Store input in variable
-Basic Pattern
+```
+
+---
+
+## Quick Revision
+
+### Data Types
+
+**Primitive:**
+
+`byte`, `short`, `int`, `long`, `float`, `double`, `char`, `boolean`
+
+**Non-Primitive:**
+
+`String`, `Array`, `Class`, `Object`, `Interface`
+
+### Operator Priority
+
+`* / %` → `+ -`
+
+### User Input
+
+```java
 import java.util.Scanner;
 
 Scanner sc = new Scanner(System.in);
 
 int a = sc.nextInt();
+```
+
+### Remember
+
+- `Scanner` → used for taking input
+- `nextInt()` → reads an integer
+- `next()` → reads one word
+- `nextLine()` → reads a complete line
+- `* / %` → higher priority
+- `+ -` → lower priority
+- `()` → changes the order of operations
