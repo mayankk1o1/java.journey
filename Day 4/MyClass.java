@@ -9,7 +9,6 @@ class computer
         // num+=1;
         return 56;
     }
-
 }
 public class MyClass{
         public static void main(String[] a) {
