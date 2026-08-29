@@ -11,7 +11,6 @@ class computer
     }
 
 }
-
 public class MyClass{
         public static void main(String[] a) {
         
@@ -19,7 +18,5 @@ public class MyClass{
             comp.playMusic();
             int num2 = comp.displaynumber();
             System.out.println(num2);
-
-
     }
 }
