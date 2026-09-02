@@ -6,6 +6,10 @@ class Human
     private int age;
     private String name;
 
+
+    //Below are setters and getters
+    //ALways use names to make it look good and readble
+
     public int getAge() {
         return age;
     }
