@@ -1,12 +1,9 @@
 //what we are doing here is making our variable private
 //only was to access them is thru the methods we have set and get
-
 class Human
 {
     private int age;
     private String name;
-
-
     //Below are setters and getters
     //ALways use names to make it look good and readble
 
@@ -25,10 +22,8 @@ class Human
     public void setName(String name) {
         this.name = name;
     }
-
     
 }
-
 public class encpl{
     public static void main(String[] args) {
 
