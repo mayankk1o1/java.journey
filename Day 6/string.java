@@ -20,6 +20,7 @@ public class string{
 
         StringBuffer sb = new StringBuffer("Maxy waxy");
 
+
         //to add anything after it or make changes
         sb.append(" ehehehehe");
         System.out.println(sb);
